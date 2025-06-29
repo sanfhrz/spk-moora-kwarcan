@@ -55,8 +55,9 @@ moora-kwarcan/
 
 ## 🔐 Login Default
 
-- **Username:** admin
-- **Password:** password
+- **Username:** 
+- **Password:**
+  contact me : fahrizaihsan06@gmail.com
 
 ## 📊 Metode MOORA
 
