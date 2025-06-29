@@ -1,0 +1,281 @@
+/* Responsive Design for All Devices */
+
+/* Mobile First Approach */
+@media (max-width: 480px) {
+    .dashboard-header {
+        padding: 1rem;
+        text-align: center;
+    }
+    
+    .dashboard-header h1 {
+        font-size: 1.5rem;
+    }
+    
+    .dashboard-header p {
+        font-size: 0.9rem;
+    }
+    
+    .header-actions {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .header-actions .btn {
+        width: 100%;
+        margin-right: 0;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .stat-card {
+        padding: 1rem;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .stat-icon {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+    
+    .stat-content h3 {
+        font-size: 1.5rem;
+    }
+    
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .card-header {
+        padding: 1rem;
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+    
+    .card-content {
+        padding: 1rem;
+    }
+    
+    .ranking-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+        padding: 1rem 0.5rem;
+    }
+    
+    .rank-badge {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+    
+    .score {
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+    
+    .quick-actions {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+    
+    .quick-action {
+        padding: 1rem;
+    }
+    
+    .quick-action i {
+        font-size: 1.5rem;
+    }
+    
+    .table-responsive {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .table {
+        min-width: 600px;
+    }
+    
+    .modal-content {
+        width: 95%;
+        margin: 1rem;
+        padding: 1rem;
+    }
+}
+
+/* Tablet Portrait */
+@media (min-width: 481px) and (max-width: 768px) {
+    .dashboard-header {
+        padding: 1.5rem;
+    }
+    
+    .dashboard-header h1 {
+        font-size: 2rem;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .quick-actions {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .content {
+        margin-left: 0;
+        padding: 1.5rem;
+    }
+}
+
+/* Tablet Landscape */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .content {
+        margin-left: 250px;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+    .stats-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .dashboard-grid {
+        grid-template-columns: 2fr 1fr;
+    }
+    
+    .content {
+        margin-left: 250px;
+    }
+}
+
+/* Large Desktop */
+@media (min-width: 1440px) {
+    .content {
+        max-width: 1400px;
+        margin: 0 auto;
+        margin-left: 250px;
+        padding: 2rem 3rem;
+    }
+    
+    .dashboard-header {
+        padding: 3rem 2rem;
+    }
+    
+    .stats-grid {
+        gap: 2rem;
+    }
+    
+    .dashboard-grid {
+        gap: 2.5rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .sidebar,
+    .header-actions,
+    .quick-actions,
+    .btn,
+    button {
+        display: none !important;
+    }
+    
+    .content {
+        margin-left: 0 !important;
+        padding: 0 !important;
+    }
+    
+    .dashboard-card,
+    .stat-card {
+        box-shadow: none !important;
+        border: 1px solid #ddd !important;
+        break-inside: avoid;
+    }
+    
+    .dashboard-header {
+        background: #f8f9fa !important;
+        color: #333 !important;
+    }
+}
+
+/* High DPI Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .stat-icon,
+    .rank-badge {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    .dashboard-card,
+    .stat-card {
+        background: #2d3748;
+        color: #e2e8f0;
+    }
+    
+    .card-header {
+        background: #4a5568;
+        border-bottom-color: #4a5568;
+    }
+    
+    .ranking-item {
+        background: #4a5568;
+    }
+    
+    .ranking-item:hover {
+        background: #2d3748;
+    }
+    
+    .quick-action {
+        background: #4a5568;
+        color: #e2e8f0;
+    }
+    
+    .quick-action:hover {
+        background: #667eea;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Focus Styles for Accessibility */
+@media (prefers-reduced-motion: no-preference) {
+    .btn:focus,
+    .quick-action:focus,
+    button:focus {
+        outline: 2px solid #667eea;
+        outline-offset: 2px;
+    }
+}

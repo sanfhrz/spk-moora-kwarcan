@@ -1,0 +1,92 @@
+/* Custom Styles untuk SPK MOORA */
+
+/* Dashboard Cards */
+.dashboard-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.dashboard-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* MOORA Calculation Styles */
+.moora-matrix {
+    font-size: 0.9rem;
+}
+
+.moora-matrix th,
+.moora-matrix td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.5rem;
+}
+
+.ranking-table .rank-1 {
+    background-color: #fff3cd;
+    border-left: 4px solid #ffc107;
+}
+
+.ranking-table .rank-2 {
+    background-color: #f8f9fa;
+    border-left: 4px solid #6c757d;
+}
+
+.ranking-table .rank-3 {
+    background-color: #fff3e0;
+    border-left: 4px solid #fd7e14;
+}
+
+/* Loading Spinner */
+.loading-spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #0d6efd;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Form Styles */
+.form-floating > label {
+    color: #6c757d;
+}
+
+.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+/* Alert Styles */
+.alert {
+    border: none;
+    border-radius: 10px;
+    border-left: 4px solid;
+}
+
+.alert-success {
+    border-left-color: #198754;
+}
+
+.alert-danger {
+    border-left-color: #dc3545;
+}
+
+.alert-warning {
+    border-left-color: #ffc107;
+}
+
+.alert-info {
+    border-left-color: #0dcaf0;
+}
