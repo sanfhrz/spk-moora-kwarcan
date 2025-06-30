@@ -45,12 +45,77 @@ Sistem Pendukung Keputusan Pemilihan Kwarcan Terbaik di Kabupaten Asahan menggun
 
 ```
 moora-kwarcan/
-├── config/          # Konfigurasi database
-├── includes/        # File include (header, sidebar, dll)
-├── admin/           # Panel admin
-├── assets/          # CSS, JS, images
-├── exports/         # File export
-└── uploads/         # File upload
+│   .htaccess
+│   index.php
+│   README.md
+│   setup.php
+│
+├───admin
+│   │   cetak-detail.php
+│   │   dashboard.php
+│   │   hasil-moora.php
+│   │   hitung-moora.php
+│   │   kriteria.php
+│   │   kwarcan.php
+│   │   laporan.php
+│   │   login.php
+│   │   logout.php
+│   │   pengaturan.php
+│   │   penilaian.php
+│   │
+│   └───ajax
+│           export-kriteria.php
+│           export-kwarcan.php
+│           get-kriteria-detail.php
+│           get-kriteria.php
+│           get-kwarcan-detail.php
+│           get-kwarcan-stats.php
+│           get-kwarcan.php
+│           get-penilaian-detail.php
+│           get-stats.php
+│
+├───ajax
+│       download-template.php
+│       export-matrix.php
+│       get-assessment.php
+│       get-stats.php
+│       import-excel.php
+│
+├───assets
+│   ├───css
+│   │       admin.css
+│   │       custom.css
+│   │       dashboard.css
+│   │       responsive.css
+│   │       sidebar-enhancement.css
+│   │
+│   └───js
+│           admin.js
+│           dashboard.js
+│
+├───classes
+│       MOORA.php
+│
+├───config
+│   │   database.php
+│   │
+│   └───databases
+│           spk_kwarcan.sql
+│
+├───includes
+│       connection.php
+│       footer.php
+│       functions.php
+│       header.php
+│       navbar.php
+│       sidebar.php
+│
+└───other
+        footer.php
+        get-kwarcan-detail.php
+        header.php
+        navbar.php
+        sidebar.php
 ```
 
 ## 🔐 Login Default
